@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="animals">
+        <item>Słoń</item>
+        <item>Pies</item>
+        <item>Żyrafa</item>
+    </string-array>
+    <string-array name="animals_keys">
+        <item>elephant</item>
+        <item>dog</item>
+        <item>giraffe</item>
+    </string-array>
+    <string-array name="ice_cream">
+        <item>Truskawkowe</item>
+        <item>Waniliowe</item>
+        <item>Czekoladowe</item>
+    </string-array>
+    <string-array name="ice_cream_values">
+        <item>strawberry</item>
+        <item>vanilla</item>
+        <item>chocolate</item>
+    </string-array>
+    <string-array name="cities">
+        <item>Kraków</item>
+        <item>Gdańsk</item>
+        <item>Kołobrzeg</item>
+        <item>Suwałki</item>
+        <item>Szczawnica</item>
+    </string-array>
+    <string-array name="cities_values">
+        <item>krakow</item>
+        <item>gdansk</item>
+        <item>kolobrzeg</item>
+        <item>suwalki</item>
+        <item>szczawnica</item>
+    </string-array>
+</resources>

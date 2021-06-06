@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/menu_example_1"
+            app:showAsAction="ifRoom|withText"
+            android:icon="@drawable/googleg_standard_color_18"
+            android:title="Jeden"/>
+    <item
+            android:id="@+id/menu_example_2"
+            app:showAsAction="ifRoom|withText"
+            android:title="Dwa" />
+    <item
+            android:id="@+id/menu_example_3"
+            app:showAsAction="ifRoom|withText"
+            android:title="Trzy"/>
+
+    <item
+            android:id="@+id/menu_example_4"
+            app:showAsAction="ifRoom|withText"
+            android:title="Cztery"/>
+
+    <item
+            android:id="@+id/menu_example_5"
+            app:showAsAction="ifRoom|withText"
+            android:title="Pięć"/>
+</menu>

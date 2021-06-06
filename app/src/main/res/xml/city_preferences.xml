@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <MultiSelectListPreference
+        android:key="pref_cities"
+        android:entries="@array/cities"
+        android:entryValues="@array/cities_values"
+        android:title="Wybierz miasta" />
+</PreferenceScreen>

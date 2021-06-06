@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+            android:key="pref_light"
+            android:summaryOn="włączone"
+            android:summaryOff="wyłączone"
+            android:title="Światło"/>
+    <SwitchPreferenceCompat
+            android:key="pref_wash_machine"
+            android:summaryOn="włączona"
+            android:summaryOff="wyłączona"
+            android:title="Pranie"/>
+    <EditTextPreference
+            android:key="pref_name"
+            android:dialogTitle="Podaj swoje imię"
+            android:negativeButtonText="Anuluj"
+            android:positiveButtonText="OK"
+            android:title="Imię"/>
+    <ListPreference
+            android:key="pref_animals"
+            android:defaultValue="cat"
+            android:dialogTitle="Dialog title"
+            android:entries="@array/animals"
+            android:entryValues="@array/animals_keys"
+            android:summary="Wybierz zwierzątko"
+            android:title="Zwierzak"/>
+    <MultiSelectListPreference
+            android:key="pref_ice_cream"
+            android:entries="@array/ice_cream"
+            android:entryValues="@array/ice_cream_values"
+            android:title="Smaki lodów"/>
+</PreferenceScreen>

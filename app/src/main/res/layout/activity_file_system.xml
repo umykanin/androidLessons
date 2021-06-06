@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:padding="16dp">
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/file_system_folder_name"
+            android:hint="Enter folder name"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/file_system_btn_create"
+            android:text="Create"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/file_system_folder_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/file_system_btn_delete"/>
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/file_system_btn_delete"
+            android:text="Delete"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/file_system_folder_name"
+            app:layout_constraintStart_toEndOf="@id/file_system_btn_create"
+            app:layout_constraintEnd_toStartOf="@id/file_system_btn_open"/>
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/file_system_btn_open"
+            android:text="Open"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/file_system_folder_name"
+            app:layout_constraintStart_toEndOf="@id/file_system_btn_delete"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

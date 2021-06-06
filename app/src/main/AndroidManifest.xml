@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.dialog">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- write zawiera read -->
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name="com.example.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.AllLessonsActivity"
+                  android:label="Lista przykładów" />
+
+
+        <!--        Layouts       -->
+        
+        <activity android:name=".DialogMainActivity"
+                  android:label="Dialogi (manifest)"
+                  android:parentActivityName="com.example.AllLessonsActivity" />
+        <activity android:name="com.example.actionbar.ActionBarMainActivity"
+                  android:label="Action Bar (manifest)"
+                  android:parentActivityName="com.example.AllLessonsActivity" />
+        <activity android:name="com.example.sharedpreferences.SharedPreferencesMainActivity"
+                  android:label="Shared Preferences"
+                  android:parentActivityName="com.example.AllLessonsActivity" />
+
+        <activity android:name="com.example.preferences.CurrentPreferencesActivity"
+                  android:label="Preferences"
+                  android:parentActivityName="com.example.AllLessonsActivity" />
+
+        <activity android:name="com.example.preferences.PreferencesActivity"
+                  android:label="Current preferences"
+                  android:parentActivityName="com.example.preferences.CurrentPreferencesActivity"/>
+        <activity android:name="com.example.preferences.CitiesActivity"
+                  android:label="Zadanie"
+                  android:parentActivityName="com.example.preferences.CurrentPreferencesActivity" />
+        <activity android:name="com.example.filesystem.FileSystemActivity"
+                  android:label="File system"
+                  android:parentActivityName="com.example.AllLessonsActivity" />
+
+        <!-- Data Bases  -->
+
+        <activity android:name="com.example.database.DataBaseListActivity"
+                  android:label="Bazy danych"
+                  android:parentActivityName="com.example.AllLessonsActivity" />
+        <activity android:name="com.example.database.nativeDb.DataBaseNativeUsersListActivity"
+                  android:label="Natywna"
+                  android:parentActivityName="com.example.database.DataBaseListActivity" />
+        <activity android:name="com.example.database.nativeDb.DataBaseNativeUserActivity"
+                  android:label="Użytkownik"
+                  android:parentActivityName="com.example.database.nativeDb.DataBaseNativeUsersListActivity" />
+
+
+
+    </application>
+
+</manifest>
